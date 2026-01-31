@@ -4,10 +4,12 @@
   "properties": {
     "grouped": {
       "title": "Grouped by brand (JSON)",
+      "type": "string",
       "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/grouped.json"
     },
     "flat": {
       "title": "Flat list (dataset view)",
+      "type": "string",
       "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
     }
   }

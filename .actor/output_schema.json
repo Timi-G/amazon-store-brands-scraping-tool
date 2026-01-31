@@ -1,0 +1,14 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Output of Amazon Store Brands Scraper",
+  "properties": {
+    "grouped": {
+      "title": "Grouped by brand (JSON)",
+      "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/grouped.json"
+    },
+    "flat": {
+      "title": "Flat list (dataset view)",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    }
+  }
+}

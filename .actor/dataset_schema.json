@@ -1,0 +1,30 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "brand": { "type": "string" },
+      "name": { "type": "string" },
+      "asin": { "type": "string" },
+      "page": { "type": "string" },
+      "image_url": { "type": "string" }
+    },
+    "required": ["brand", "asin", "page"]
+  },
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": ["image_url", "brand", "name", "asin", "page"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "image_url": { "label": "Image", "format": "image" },
+          "page": { "label": "Product page", "format": "link" }
+        }
+      }
+    }
+  }
+}
